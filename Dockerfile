@@ -128,6 +128,9 @@ RUN set -ex \
     && pip install pattern3 \
     && python -m spacy download en_core_web_sm \
     && python -m spacy download en_core_web_lg \
+    && pip install kmodes \
+    && pip install matplotlib \
+    && pip install sklearn \    
     && if [ -n "${PYTHON_DEPS}" ]; then pip install ${PYTHON_DEPS}; fi \
     && apt-get purge --auto-remove -yqq $buildDeps \
     && apt-get autoremove -yqq --purge \
