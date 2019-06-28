@@ -1,4 +1,4 @@
-# VERSION 1.10.1
+# VERSION 1.10.2
 # AUTHOR: Originated Matthieu "Puckel_" Roisil / Forked by Jia "ichenjia" Chen
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t ichenjia/docker-airflow .
@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TERM linux
 
 # Airflow
-ARG AIRFLOW_VERSION=1.10.1
+ARG AIRFLOW_VERSION=1.10.2
 ARG AIRFLOW_USER_HOME=/usr/local/airflow
 ARG AIRFLOW_DEPS=""
 ARG PYTHON_DEPS=""
